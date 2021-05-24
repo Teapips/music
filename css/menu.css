@@ -1,0 +1,134 @@
+#menu a:active {
+  color:#000;
+}
+#menu select {
+  display: none;
+}
+
+#menu > .active > a {
+  border:0;
+  color:#1fcdff;
+}
+#menu .active a:focus{
+  outline: none;
+  border: none;
+}
+#menu .active a:active {
+  outline: none;
+  border: none;
+}
+#menu .active a:link {
+  outline: none;
+  border: none;
+}
+#menu .active a:visited  {
+  outline: none;
+  border: none;
+}
+#menu li{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: 'Roboto', 'sans-serif';
+  font-size:14px;
+  color:#000;
+  list-style:none;
+  text-transform:uppercase;
+  font-weight:700;
+
+}
+#menu > li {
+  border-right:1px solid #000;
+}
+
+#menu li:last-child{
+  border-right:0;
+  padding-right:0px;
+}
+#menu{
+  margin-top: 60px;
+  float: right;
+}
+
+#menu a {
+  display: block;
+  padding-left: 17px;
+  padding-right: 16px;
+}
+
+#menu li a{
+  color:#000;
+  text-decoration:none;
+}
+#menu li a:hover{
+  border:none;
+  outline:none;
+  color:#1fcdff;
+  z-index:100;
+}
+
+#menu-container > ul > li {
+  position: relative;
+  z-index:100;
+}
+
+
+#menu-container ul {
+  list-style: none;
+}
+
+#menu-container ul ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  padding-left: 0;
+  width: 100%;
+}
+
+#menu-container ul ul.projects-sub {
+  width: 200%;
+}
+
+#menu-container ul ul.info-sub {
+  width: 200px;
+  right: 0;
+  left: auto;
+  -webkit-box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.53);
+  -moz-box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.53);
+  box-shadow: -2px 3px 5px -3px rgba(0,0,0,0.53);
+}
+
+#menu-container ul li:hover > ul {
+  display:inherit;
+}
+
+#menu-container ul li:hover {
+  background-color: #ffffff;
+}
+
+#menu-container ul ul {
+  -webkit-box-shadow: 1px 3px 5px -3px rgba(0,0,0,0.53);
+  -moz-box-shadow: 1px 3px 5px -3px rgba(0,0,0,0.53);
+  box-shadow: 1px 3px 5px -3px rgba(0,0,0,0.53);
+}
+
+#menu-container ul ul li {
+  display: list-item;
+  position: relative;
+  background-color: #FFFFFF;
+  text-align: left;
+  float: none;
+}
+
+#menu-container ul ul li:hover {
+  background-color: #ffffff;
+}
+
+#menu-container ul ul li a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu li > a:after { content:  ' +'; }
+#menu li > a:only-child:after { content: ''; }
